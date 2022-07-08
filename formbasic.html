@@ -1,0 +1,155 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet"> 
+    <title>HTML Forms</title>
+    <style>
+   
+    .heading{
+    font-family: 'Ubuntu', sans-serif;
+     font-size:40;
+    
+    }
+    .container{
+    display: flex;
+    flex-direction: column; 
+    background-color: aquamarine;
+    width:550px;
+     border-radius: 20px;
+     float:left; 
+     
+    }
+    .foradjustment{
+    float:left;
+    
+    
+    }
+    .entry{
+   
+  
+    }
+    .searchbar{
+    font-family: 'Ubuntu', sans-serif;
+    width: 500px;
+    height: 80px;
+    color: blue;
+    border: 4px solid black;
+    font-size:40;
+    background-color: white; 
+    text-align: center;  
+    border-radius: 20px; 
+    }
+    .name{
+    font-size: 40;
+    font-family: 'Ubuntu', sans-serif;  
+    }
+    .submissionbutton{
+    font-size: 40;
+    font-family: 'Ubuntu', sans-serif;
+     width: 200px;
+    height: 60px;  
+    margin: 60px;
+    
+    
+    }
+   
+    </style>
+    <script>
+  
+    </script>
+ 
+   
+</head>
+ <body>
+ 
+ 
+ <div class="heading">
+ Kindly Fill this  Application Form :
+   
+ </div>
+
+ <div class="container">
+ <div class="entry">
+<label class="name">Name</label>
+<br>
+
+<input type="text" class="searchbar" placeholder="Enter your name here" id="studentname"  value="hassan raza khan">  
+</div>
+
+
+
+<div class="entry">
+<label class="name">CNIC Number</label>
+<br>
+
+<input type="text" class="searchbar" placeholder="Enter your CNIC Number here" id="cnicnumber" value="35202-5952803-3">  
+</div>
+
+
+
+
+<div class="entry">
+<label class="name">Adress</label>
+<br>
+<input type="text" class="searchbar" placeholder="Enter your Address here" id="address" value="Islampura">  
+</div>
+
+
+
+<div class="entry">
+<label class="name">University</label>
+<br>
+
+<input type="text" class="searchbar" placeholder="Enter your University Name here" id="university" value="PIEAS">  
+</div>
+
+
+
+
+
+<div class="entry">
+<label class="name">GPA</label>
+<br>
+
+<input type="text" class="searchbar" placeholder="Enter your GPA here" id="gpa" value="1.71">  
+</div>
+ <script>
+  var a=document.getElementById('studentname').value;
+    var b=document.getElementById('cnicnumber').value;
+   var c=document.getElementById('address').value;
+   var d=document.getElementById('university').value;
+   var e=document.getElementById('gpa').value;
+   var names=[a,b,c,d,e];
+ function showtheinput(){
+ document.write(names[0]+names[1]);
+
+ 
+ }
+
+
+</script>
+
+
+
+<div class="entry" >
+<input type="submit" value="Submit" class="submissionbutton" onclick="showtheinput()">
+
+</div>
+ </div>
+  
+
+ 
+
+
+
+
+
+
+   
+    
+</body>
+</html>
