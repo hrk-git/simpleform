@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet"> 
+    <title>Form Validation Client side</title>
+    <style>
+    .containerform{
+    background-color:skyblue;
+    padding:20px;
+    width:70%;
+    }
+    .container{
+        display: flex;
+        margin: 20px;
+        font-family: 'Ubuntu', sans-serif;
+
+    
+    }
+   .input{
+   font-size:30px;
+  
+   width:500px;
+   height:70px;
+   display: flex;
+   text-align:center;
+   }
+   .errornotification{
+   color:red;
+   margin-top: 20;
+   display: none; 
+   }
+   .labelG{
+     font-size:30px;
+     margin-top: 15;
+       margin-right:40px;
+   
+   
+   }
+  
+   
+  
+      
+  
+  
+    </style> 
+</head>
+<body>
+<form  class="containerform">
+
+<div class="container">
+<label class="labelG" id="labelname">Name:</label>
+<input type ="text"      class="input"   id="studentname"         placeholder="Enter your name "          required>
+<span class="errornotification">!!your entry is invalid</span>
+
+</div>
+<div class="container">
+<label class="labelG"id="labelemail">Email:</label>
+<input type ="email"     class="input"   id="email"               placeholder="Enter your email"          required>
+<span class="errornotification">!!please enter a valid email</span>
+</div>
+
+
+
+<div class="container">
+<label class="labelG" id="labelpassword">Password:</label>
+<input type ="password"  class="input"   id="password"            placeholder="enter your password"       required>
+<span class="errornotification">!!your password must contain more than 8 characters</span>
+</div>
+
+
+<div class="container">
+<label class="labelG"  id="labelconfirm" >Confirm-Password:</label>
+<input type ="password"  class="input"   id="confirmpassword"     placeholder="confirm passord"           required>
+<span class="errornotification">!!this doesnot match</span>
+</div>
+
+
+<div class="container">
+<label class="labelG" id="labelmobile">Mobile-Number:</label>
+<input type="text"       class="input"   id="phonenumber"         placeholder="Enter your phone number"   required>
+<span class="errornotification">!!kindly enter a vaild phone number</span>
+</div>
+
+
+</form>
+
+
+
+
+
+</body>
+</html>
